@@ -1,0 +1,24 @@
+[project]
+name = "tag-extractor-worker"
+version = "0.1.0"
+description = "Worker for general tag scoring for provider book"
+authors = [
+    {name = "ZinAndr",email = "zinevich.andr@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+    "python-dotenv (>=1.1.1,<2.0.0)",
+    "spacy (>=3.8.7,<4.0.0)",
+    "en-core-web-md @ https://github.com/explosion/spacy-models/releases/download/en_core_web_md-3.8.0/en_core_web_md-3.8.0.tar.gz",
+    "fsspec (>=2025.9.0,<2026.0.0)",
+    "pathlib (>=1.0.1,<2.0.0)",
+]
+
+[tool.poetry]
+package-mode = false
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

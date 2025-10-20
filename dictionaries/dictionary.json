@@ -1,0 +1,8 @@
+{
+  "romance": ["love", "affection", "heart"],
+  "horror": ["monster", "fear", "terror", "ghost"],
+  "science": ["experiment", "creation", "laboratory"],
+  "revenge": ["vengeance", "hatred", "justice"],
+  "adventure": ["journey", "travel", "voyage", "exploration"],
+  "nature": ["mountain", "forest", "sea", "sky"]
+}
