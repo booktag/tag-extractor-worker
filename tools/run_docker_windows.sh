@@ -23,6 +23,7 @@ echo "Running $IMAGE_NAME:$TAG ..."
 export MSYS_NO_PATHCONV=1 #disable "helpful" path interpolations
 
 docker run --rm \
+       -v ~/.aws:/root/.aws \
        -v "$(pwd -W)":"$VOLUME_FOLDER" \
        --env-file .env \
        -e ARTIFACTS_ROOT_PATH="$ARTIFACTS_ROOT_PATH" \
