@@ -13,8 +13,6 @@ logger = logging.getLogger()
 # Load .env into process environment
 load_dotenv()
 
-logger.info(os.getenv("AWS_PROFILE"))
-
 logger.info("Testing spacy models:")
 try:
     nlp = spacy.load("en_core_web_md")
