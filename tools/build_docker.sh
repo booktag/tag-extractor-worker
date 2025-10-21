@@ -8,4 +8,4 @@ TAG=latest
 cd "$(dirname "$0")/.."
 
 echo "Building $IMAGE_NAME:$TAG ..."
-docker build -t $IMAGE_NAME:$TAG .
+docker buildx build --platform linux/amd64 -t $IMAGE_NAME:$TAG .
