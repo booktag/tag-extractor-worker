@@ -13,7 +13,7 @@ logger = logging.getLogger()
 # Load .env into process environment
 load_dotenv()
 
-logger.info("Testing spacy models:")
+logger.info("Testing spacy models and image update:")
 try:
     nlp = spacy.load("en_core_web_md")
     doc = nlp("This is a quick smoke test for SpaCy running inside Alpine.")
